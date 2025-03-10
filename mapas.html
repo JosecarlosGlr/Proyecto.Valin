@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valin</title>
+    <link rel="stylesheet" href="mapas.css">
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Mapas</h1>
+        <hr id="lineat">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agentes.html">Agentes</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="armas.html">Armas</a></li>
+                <li><a href="https://playvalorant.com/es-es/news/">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="base">
+        <h2>Explora los campos de batalla</h2>
+        <p>Descubre cada rincón, nunca sabes donde se esconderán tus rivales.</p>
+    </section>
+    <div class="filtros">
+        <input type="text" id="barraBusqueda" placeholder="Buscar por nombre" />
+    </div>
+    <section id="contenedorMapas" class="mapas"></section>
+   
+    <!-- Modal para mostrar información del mapa -->
+    <div id="modalMapa" class="modal">
+        <div class="contenido-modal">
+            <span class="cerrar-btn">&times;</span>
+            <h2 id="nombreMapa"></h2>
+            <img id="imagenMapa" src="" alt="Imagen del mapa">
+            <p id="descripcionMapa"></p>
+        </div>
+    </div>
+   
+    <script src="mapas.js"></script>
+
+
+    <footer>
+        <p>&copy; 2025 Valorant Fan Page | No oficial</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valin</title>
+    <link rel="stylesheet" href="armas.css">
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Agentes</h1>
+        <hr id="lineat">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agentes.html">Agentes</a></li>
+                <li><a href="mapas.html">Mapas</a></li>
+                <li><a href="armas.html">Armas</a></li>
+                <li><a href="https://playvalorant.com/es-es/news/">Noticias</a></li>
+            </ul>
+        </nav>
+        </header>
+   
+        <section class="base">
+            <h2>Conoce cada arma</h2>
+            <p>Adentrate mas afondo y conoce todo el arsenal para dominar cada enfrentamiento.</p>
+        </section>
+        <div class="filtros">
+            <input type="text" id="barraBusqueda" placeholder="Buscar por nombre" />
+        </div>
+    </header>
+    <section id="contenedor-armas" class="armas"></section>
+    <!-- Modal para mostrar detalles del arma -->
+    <div id="modalArma" class="modal">
+        <div class="contenido-modal">
+            <span class="cerrar-btn">&times;</span>
+            <h2 id="nombreArma"></h2>
+            <img id="imagenArma" src="" alt="">
+            <p id="categoriaArma"></p>
+            <p id="dañoArma"></p>
+        </div>
+    </div>
+
+
+    <script src="armas.js"></script>
+
+
+    <footer>
+        <p>&copy; 2025 Valorant Fan Page | No oficial</p>
+    </footer>
+</body>
+</html>
