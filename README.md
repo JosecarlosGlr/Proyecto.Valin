@@ -13,5 +13,5 @@ Es una Fan Page que trata sobre Valorant un juego de 5vs5 el cual trata defender
 
 <h1>🔗 Enlaces externos</h1>
 
-https://proyecto-valin.vercel.app/
-https://drive.google.com/file/d/18P29JDy-m5L7CA495YmXf89_UinU-RsO/view?usp=sharing
+<P>https://proyecto-valin.vercel.app/</P>
+<P>https://drive.google.com/file/d/18P29JDy-m5L7CA495YmXf89_UinU-RsO/view?usp=sharing</P>
