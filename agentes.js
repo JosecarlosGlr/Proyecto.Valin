@@ -17,15 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://valorant-api.com/v1/agents?isPlayableCharacter=true")
         .then(response => response.json())
         .then(data => {
-            datosAgentes = data.data; // Guardar los datos de los agentes
-            mostrarAgentes(datosAgentes); // Mostrar los agentes en la página
+            datosAgentes = data.data; 
+            mostrarAgentes(datosAgentes); 
         })
         .catch(error => console.error("Error al obtener los agentes:", error));
 
 
     // Función para mostrar los agentes en la página
     function mostrarAgentes(agentes) {
-        contenedorAgentes.innerHTML = ""; // Limpiar el contenedor
+        contenedorAgentes.innerHTML = ""; 
         agentes.forEach(agente => {
             const tarjetaAgente = document.createElement("div");
             tarjetaAgente.classList.add("tarjeta-agente");
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        mostrarAgentes(agentesFiltrados); // Mostrar los agentes filtrados
+        mostrarAgentes(agentesFiltrados); 
     }
 
 

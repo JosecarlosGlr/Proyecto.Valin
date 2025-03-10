@@ -19,15 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://valorant-api.com/v1/maps")
         .then(response => response.json())
         .then(data => {
-            datosMapas = data.data; // Guardar los datos de los mapas
-            mostrarMapas(datosMapas); // Mostrar los mapas en la página
+            datosMapas = data.data; 
+            mostrarMapas(datosMapas); 
         })
         .catch(error => console.error("Error al obtener los mapas:", error));
 
 
     // Función para mostrar los mapas en la página
     function mostrarMapas(mapas) {
-        contenedorMapas.innerHTML = ""; // Limpiar el contenedor
+        contenedorMapas.innerHTML = ""; 
 
 
         // Filtrar mapas excluidos
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             // Usamos la imagen splash por defecto en las tarjetas
-            const imagen = mapa.splash || "default-image-url.jpg"; // Usa la imagen splash si está disponible
+            const imagen = mapa.splash || "default-image-url.jpg"; 
 
 
             tarjetaMapa.innerHTML = `
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         // Mostrar la imagen displayIcon en el modal
-        imagenMapa.src = mapa.displayIcon; // Usamos displayIcon en el modal
+        imagenMapa.src = mapa.displayIcon; 
 
 
         descripcionMapa.textContent = mapa.description;
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        mostrarMapas(mapasFiltrados); // Mostrar los mapas filtrados
+        mostrarMapas(mapasFiltrados); 
     }
 
 

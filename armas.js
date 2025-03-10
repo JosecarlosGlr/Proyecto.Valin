@@ -16,15 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://valorant-api.com/v1/weapons")
         .then(respuesta => respuesta.json())
         .then(datos => {
-            datosArmas = datos.data; // Guardar los datos de las armas
-            mostrarArmas(datosArmas); // Mostrar armas en la página
+            datosArmas = datos.data; 
+            mostrarArmas(datosArmas); 
         })
         .catch(error => console.error("Error al obtener las armas:", error));
 
 
-    // Función para mostrar las armas en cajas dentro de la página
+    // Función que muestra las armas en cajas
     function mostrarArmas(armas) {
-        contenedorArmas.innerHTML = ""; // Limpiar contenedor
+        contenedorArmas.innerHTML = ""; 
 
 
         armas.forEach(arma => {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
 
 
-            // Agregar evento click para abrir el modal con detalles
+            // Evento click para abrir el modal con detalles
             cajaArma.addEventListener("click", () => abrirModal(arma));
 
 
